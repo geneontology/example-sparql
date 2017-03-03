@@ -1,0 +1,7 @@
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?s
+WHERE {
+	?s oboInOwl:hasAlternativeId "GO:0050875"^^xsd:string
+}

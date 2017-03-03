@@ -1,0 +1,6 @@
+SELECT *
+WHERE {
+  GRAPH <http://geneontology.org/rdf/inferred/> {
+    <http://purl.obolibrary.org/obo/GO_0009987> ?p ?o .
+  }
+}

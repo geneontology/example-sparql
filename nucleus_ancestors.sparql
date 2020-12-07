@@ -1,6 +1,9 @@
+#+ defaults:
+#+   - label: "nucleus"@en
+
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?ancestor
 WHERE {
-    ?s rdfs:label "nucleus"@en ;
+    ?s rdfs:label ?_label_en ;
     rdfs:subClassOf+ ?ancestor .
 }

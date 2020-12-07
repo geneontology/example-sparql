@@ -2,5 +2,6 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?descendants
 WHERE {
     ?nucleus rdfs:label "nucleus"@en .
-    ?descendants rdfs:subClassOf+ ?nucleus .  
+    ?descendants rdfs:subClassOf ?nucleus .  
+    FILTER(isIRI(?descendants))
 }
